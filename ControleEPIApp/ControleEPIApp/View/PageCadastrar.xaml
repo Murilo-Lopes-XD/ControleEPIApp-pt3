@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="FuncionarioCadastro" Margin="10"/>
+            <Label Text="NOME" FontSize="Medium" FontAttributes="Bold"/>
+            <Entry x:Name="txtNome" Keyboard="Default" Placeholder="Digite o nome do funcionário"/>
+            <Label Text="EPI's" FontSize="Medium" FontAttributes="Bold"/>
+            <Entry x:Name="txtEPI" Keyboard="Default" Placeholder="Digite as EPI's do funcionário"/>
+            <Label Text="VALIDADE EPI (DIAS)" FontSize="Medium" FontAttributes="Bold"/>
+            <Entry x:Name="txtValidade" Keyboard="Numeric"/>
+            <StackLayout HorizontalOptions="Center">
+                <Button Text="Cadastrar" BackgroundColor="White" FontAttributes="Bold" x:Name="btnCadastrar" Clicked="btnCadastrar_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

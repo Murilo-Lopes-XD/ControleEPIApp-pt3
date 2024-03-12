@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControleEPIApp.View.PageUpDel">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="NOME" FontSize="Medium" FontAttributes="Bold"/>
+            <Entry x:Name="txtNome" Keyboard="Default" Text="{Binding nome, Mode=TwoWay}"/>
+            <Label Text="MATRÍCULA" FontSize="Medium" FontAttributes="Bold"/>
+            <Entry x:Name="txtMatricula" Keyboard="Default" Text="{Binding matricula, Mode=TwoWay}"/>
+            <Label Text="EPI" FontSize="Medium" FontAttributes="Bold"/>
+            <Entry x:Name="txtEPI" Keyboard="Default" Text="{Binding epi, Mode=TwoWay}"/>
+            <Label Text="VALIDADE EPI (DIAS)" FontSize="Medium" FontAttributes="Bold"/>
+            <Entry x:Name="txtValidade" Keyboard="Numeric"/>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="ATUALIZAR" BackgroundColor="DarkGreen" TextColor="White" CornerRadius="10" FontAttributes="Bold" x:Name="btnAtualizar" Clicked="btnAtualizar_Clicked"/>
+                <Button Text="EXCLUIR" BackgroundColor="DarkRed" TextColor="White" CornerRadius="10" FontAttributes="Bold" x:Name="btnExcluir" Clicked="btnExcluir_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControleEPIApp.View.PagePrincipal">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="5">
+                <Label Text="Controle de EPI - Aplicativo Móvel" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" FontAttributes="Bold"/>
+            </Frame>
+            <Image Source="FuncionarioEPI" Margin="20"/>
+            <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                <Button Text="Cadastrar" BackgroundColor="White" FontAttributes="Bold" CornerRadius="10" x:Name="btnCadastrar" Clicked="btnCadastrar_Clicked"/>
+                <Button Text="Listar" BackgroundColor="White" FontAttributes="Bold" CornerRadius="10" x:Name="btnListar" Clicked="btnListar_Clicked"/>
+                <Button Text="Sair" BackgroundColor="Red" FontAttributes="Bold" CornerRadius="10" x:Name="btnSair" Clicked="btnSair_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
